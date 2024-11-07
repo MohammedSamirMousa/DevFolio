@@ -1,0 +1,37 @@
+@media screen and (min-width:992px) {
+    .hoverNav {
+        position: relative;
+    }
+
+    .hoverNav::before {
+        content: "";
+        border-bottom: 2px solid #fff;
+        width: 0%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+}
+
+    .hoverNav:hover::before {
+        content: "";
+        border-bottom: 1px solid #fff;
+        width: 60%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #nav-scroll .navbar .container .collapse .nav-item .hoverNav:hover {
+        color: #0078ff !important;
+    }
+
+    .active {
+        color: #0078ff !important;
+    }
+    
+}
